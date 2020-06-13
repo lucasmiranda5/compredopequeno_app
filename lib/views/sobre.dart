@@ -38,7 +38,9 @@ class _SobreState extends State<Sobre> {
           Text("Esse serviço é 100% gratuito para todas as empresas de Pirapora não sendo necessário ser associado a ACIAPI/CDL nem ter vinculo com o IFNMG. Um projeto Open Source que tem seu código no Github para contribuições."),
           Text("ACIAPI – Associação Comercial, Industrial e Agropecuária de Pirapora"),
           Text("CDL – Câmara dos dirigentes lojistas"),
-          Text("IFNMG – Instituto Federal do Norte de Minas Campus Pirapora")
+          Text("IFNMG – Instituto Federal do Norte de Minas Campus Pirapora"),
+          Text("Github App - https://github.com/lucasmiranda5/compredopequeno_app"),
+          Text("SistemaWeb App - https://github.com/lucasmiranda5/compredopequeno"),
               ], ),
             ),
           )
