@@ -44,7 +44,7 @@ class _ListagemProdutosState extends State<ListagemProdutos> {
     return Scaffold(
         bottomNavigationBar: Rodape(),
          appBar: PreferredSize(
-              preferredSize: Size.fromHeight(145.0),
+              preferredSize: Size.fromHeight(150.0),
               child: AppBar(
                 automaticallyImplyLeading: false,
                 flexibleSpace: Topo(),

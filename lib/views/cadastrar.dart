@@ -33,7 +33,7 @@ class _CadastrarEmpresaState extends State<CadastrarEmpresa> {
         key: _scaffoldkey,
         bottomNavigationBar: Rodape(),
         appBar: PreferredSize(
-            preferredSize: Size.fromHeight(205.0),
+            preferredSize: Size.fromHeight(210.0),
             child: AppBar(
               automaticallyImplyLeading: false,
               flexibleSpace: Topo(barraPesquisa: true),

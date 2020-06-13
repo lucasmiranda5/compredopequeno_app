@@ -37,7 +37,7 @@ class _VerEmpresaState extends State<VerEmpresa> {
     return Scaffold(
         bottomNavigationBar: Rodape(),
          appBar: PreferredSize(
-              preferredSize: Size.fromHeight(205.0),
+              preferredSize: Size.fromHeight(210.0),
               child: AppBar(
                 automaticallyImplyLeading: false,
                 flexibleSpace: Topo(barraPesquisa: true),
