@@ -4,6 +4,7 @@ import 'package:compredopequeno/shared/funcoes.dart';
 import 'package:compredopequeno/widgets/carregando.dart';
 import 'package:compredopequeno/widgets/rodape.dart';
 import 'package:compredopequeno/widgets/topo.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -87,7 +88,12 @@ class _VerEmpresaState extends State<VerEmpresa> {
                                  onTap: () {
                                   String val = valor['escrita'];
                                   val = '55'+val.replaceAll('(', '').replaceAll(')', '').replaceAll('-', '').replaceAll('_', '').replaceAll(' ', '');
-                                  Funcoes.goSite('whatsapp://send?phone='+val);
+                                  if(kIsWeb){
+                                    Funcoes.goSite('http://wa.me/'+val);
+                                  }else{
+                                    Funcoes.goSite('whatsapp://send?phone='+val);
+                                  }
+                                  
                                 },
                                 title: Text(valor['escrita']),
                                 leading: Icon(MdiIcons.whatsapp),

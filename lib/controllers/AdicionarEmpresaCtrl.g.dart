@@ -6,7 +6,7 @@ part of 'AdicionarEmpresaCtrl.dart';
 // StoreGenerator
 // **************************************************************************
 
-// ignore_for_file: non_constant_identifier_names, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
+// ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic
 
 mixin _$AdicionarEmpresaCtrl on _AdicionarEmpresaCtrlBase, Store {
   final _$nomeEmpresaAtom = Atom(name: '_AdicionarEmpresaCtrlBase.nomeEmpresa');
@@ -148,6 +148,51 @@ mixin _$AdicionarEmpresaCtrl on _AdicionarEmpresaCtrlBase, Store {
     });
   }
 
+  final _$file2Atom = Atom(name: '_AdicionarEmpresaCtrlBase.file2');
+
+  @override
+  String get file2 {
+    _$file2Atom.reportRead();
+    return super.file2;
+  }
+
+  @override
+  set file2(String value) {
+    _$file2Atom.reportWrite(value, super.file2, () {
+      super.file2 = value;
+    });
+  }
+
+  final _$base64ImageAtom = Atom(name: '_AdicionarEmpresaCtrlBase.base64Image');
+
+  @override
+  String get base64Image {
+    _$base64ImageAtom.reportRead();
+    return super.base64Image;
+  }
+
+  @override
+  set base64Image(String value) {
+    _$base64ImageAtom.reportWrite(value, super.base64Image, () {
+      super.base64Image = value;
+    });
+  }
+
+  final _$categoriasAtom = Atom(name: '_AdicionarEmpresaCtrlBase.categorias');
+
+  @override
+  ObservableList<dynamic> get categorias {
+    _$categoriasAtom.reportRead();
+    return super.categorias;
+  }
+
+  @override
+  set categorias(ObservableList<dynamic> value) {
+    _$categoriasAtom.reportWrite(value, super.categorias, () {
+      super.categorias = value;
+    });
+  }
+
   final _$escolherAsyncAction =
       AsyncAction('_AdicionarEmpresaCtrlBase.escolher');
 
@@ -263,7 +308,10 @@ contatos: ${contatos},
 nomeResponsavel: ${nomeResponsavel},
 telefoneResponsavel: ${telefoneResponsavel},
 carregando: ${carregando},
-file: ${file}
+file: ${file},
+file2: ${file2},
+base64Image: ${base64Image},
+categorias: ${categorias}
     ''';
   }
 }
